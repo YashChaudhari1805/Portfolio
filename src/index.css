@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  /* Light mode */
+  --color-surface:       100 100 97;    /* stone-100  — page background        */
+  --color-surface-raised: 255 255 255;  /* white      — floating cards          */
+  --color-border:        214 211 209;   /* stone-300                            */
+  --color-border-subtle: 231 229 228;   /* stone-200                            */
+  --color-text:          28  25  23;    /* stone-900                            */
+  --color-text-muted:    120 113 108;   /* stone-500                            */
+  --shadow-card:         0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  /* Dark mode */
+  --color-surface:        23  23  23;   /* ~stone-900 — page background         */
+  --color-surface-raised:  0   0   0;   /* black      — floating cards          */
+  --color-border:         68  64  60;   /* stone-700                            */
+  --color-border-subtle:  41  37  36;   /* stone-800                            */
+  --color-text:          231 229 228;   /* stone-200                            */
+  --color-text-muted:    120 113 108;   /* stone-500                            */
+  --shadow-card:         0 4px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Custom scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgba(120, 113, 108, 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(120, 113, 108, 0.7); }
