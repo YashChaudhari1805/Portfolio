@@ -41,7 +41,7 @@ export const projects = [
       "Orchestrated Gemini API-powered LLM layer to achieve personalized advisor emails based on model predictions.",
       "Implemented AI Guardrail with system prompts to achieve professional decorum and regulatory compliance in all communications.",
     ],
-    stack: ["XGBoost", "Python", "Gemini API", "SHAP", "MERN Stack"],
+    stack: ["XGBoost", "Python", "Gemini API", "SHAP"],
     status: "in-progress",
     year: "2026",
   },
