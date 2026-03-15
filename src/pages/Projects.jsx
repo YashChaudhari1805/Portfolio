@@ -49,7 +49,7 @@ function ProjectCard({ project, index }) {
         <ul className="space-y-2">
           {project.bullets.map((bullet, i) => (
             <li key={i} className="flex items-start gap-2.5 text-sm">
-              <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0 bg-stone-400 dark:bg-stone-500" />
+              <span className="mt-1.5 w-1 h-1 rounded-full shrink-0 bg-stone-400 dark:bg-stone-500" />
               <span className="text-stone-500 dark:text-stone-400">{bullet}</span>
             </li>
           ))}
