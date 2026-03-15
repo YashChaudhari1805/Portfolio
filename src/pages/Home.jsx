@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import { cn } from "../utils/cn";
 
 const SKILLS = [
-  "Python", "Scikit-Learn", "XG-Boost", "Pandas", "NumPy", "React", "Node.js", "Express", "MongoDB", "Mongoose",
+  "Python", "Flask", "Scikit-Learn", "XG-Boost", "Pandas", "NumPy", "React", "Node.js", "Express", "MongoDB", "Mongoose",
   "JavaScript", "Java", "Android", "PHP", "HTML", "CSS",
 ];
 
