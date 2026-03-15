@@ -7,7 +7,7 @@ function StatusBadge({ status }) {
   const isComplete = status === "completed";
   return (
     <span className={cn(
-      "inline-flex items-center gap-1.5 flex-shrink-0 text-xs px-3 py-1 rounded-full font-medium tracking-wide",
+      "inline-flex items-center gap-1.5 shrink-0 text-xs px-3 py-1 rounded-full font-medium tracking-wide",
       isComplete
         ? "bg-stone-900 text-stone-100 dark:bg-stone-200 dark:text-black"
         : "bg-stone-100 text-stone-600 border border-stone-300 dark:bg-stone-800 dark:text-stone-300 dark:border-stone-700"

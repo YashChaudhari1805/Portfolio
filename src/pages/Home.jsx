@@ -3,15 +3,15 @@ import Card from "../components/Card";
 import { cn } from "../utils/cn";
 
 const SKILLS = [
-  "React", "Node.js", "Express", "MongoDB", "Mongoose",
-  "JavaScript", "Python", "Java", "Android", "PHP", "HTML", "CSS",
+  "Python", "Scikit-Learn", "XG-Boost", "Pandas", "NumPy", "React", "Node.js", "Express", "MongoDB", "Mongoose",
+  "JavaScript", "Java", "Android", "PHP", "HTML", "CSS",
 ];
 
 const STATS = [
-  { label: "Projects",     value: "6+"    },
-  { label: "Experience",   value: "3 yrs" },
-  { label: "Technologies", value: "12+"   },
-  { label: "Internships",  value: "2"     },
+  { label: "Projects", value: "7+" },
+  { label: "Experience", value: "3 yrs" },
+  { label: "Technologies", value: "12+" },
+  { label: "Internships", value: "2" },
 ];
 
 export default function Home({ navigate }) {
@@ -41,9 +41,7 @@ export default function Home({ navigate }) {
           Yash Kailas Chaudhari
         </h1>
         <p className="text-lg mb-6 leading-relaxed text-stone-500 dark:text-stone-400">
-          AI Engineer &amp; Full-Stack Developer. I specialize in bridging deep
-          machine learning research with scalable web architectures to build
-          intelligent, purposeful products.
+          Data Scientist & ML Engineer. I specialize in building production-grade ML pipelines—from hybrid anomaly detection and clinical CNN diagnostics to predictive systems —leveraging PyTorch, XGBoost, Scikit-learn, and XAI techniques for real-world impact.
         </p>
 
         {/* Skill pills — stone-200 on white is visible; stone-800 on black is visible */}
@@ -102,8 +100,7 @@ export default function Home({ navigate }) {
           Currently
         </p>
         <p className="text-sm leading-relaxed">
-          Exploring the intersection of developer tooling and AI-assisted
-          workflows. Open to internship and full-time roles.
+          Currently building production-grade ML systems at the intersection of anomaly detection, medical diagnostics, and explainable AI. Open to Data Science internships.
         </p>
       </Card>
     </div>
