@@ -19,6 +19,7 @@
 export const projects = [
   {
     title: "LoanGuard — FinTech AI Pipeline",
+    image: "/projects/loanguard.png",
     description:
       "An end-to-end automated loan approval system combining Gradient Boosting with Generative AI for transparent financial decision-making.",
     bullets: [
@@ -33,6 +34,7 @@ export const projects = [
   },
   {
     title: "FitBite — AI-Powered Nutrition Tracker",
+    image: "/projects/loanguard.png",
     description:
       "A full-stack MERN application designed to simplify health tracking, with a completed React frontend and a backend nearing completion.",
     bullets: [
@@ -47,6 +49,7 @@ export const projects = [
   },
   {
     title: "MERN Stack Portfolio & Personal Brand",
+    image: "/projects/loanguard.png",
     description:
       "A high-performance, responsive portfolio showcasing the intersection of Machine Learning and Full-Stack Engineering.",
     bullets: [
@@ -61,6 +64,7 @@ export const projects = [
   },
   {
     title: "Oral Cancer Detection (Deep Learning)",
+    image: "/projects/loanguard.png",
     description:
       "A clinical-grade diagnostic tool for detecting Oral Squamous Cell Carcinoma (OSCC) from histopathological images.",
     bullets: [
@@ -75,6 +79,7 @@ export const projects = [
   },
   {
     title: "Resource-Constrained Project Scheduling (MILP)",
+    image: "/projects/loanguard.png",
     description:
       "A mathematical optimization system designed to solve the Resource-Constrained Project Scheduling Problem (RCPSP).",
     bullets: [
@@ -89,6 +94,7 @@ export const projects = [
   },
   {
     title: "Diabetes Prediction System",
+    image: "/projects/loanguard.png",
     description:
       "An end-to-end data science project developed during my internship at Exposys Data Labs.",
     bullets: [

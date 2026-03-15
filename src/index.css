@@ -1,25 +1,30 @@
 @import "tailwindcss";
 
+/* ─── Tailwind v4: enable class-based dark mode ───────────────────────────── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Register custom design tokens with Tailwind v4 ─────────────────────── */
+@theme {
+  --color-surface: rgb(100 100 97);
+  --color-surface-raised: rgb(255 255 255);
+  --color-border: rgb(214 211 209);
+  --color-border-subtle: rgb(231 229 228);
+  --color-text: rgb(28 25 23);
+  --color-text-muted: rgb(120 113 108);
+}
+
 :root {
-  /* Light mode */
-  --color-surface:       100 100 97;    /* stone-100  — page background        */
-  --color-surface-raised: 255 255 255;  /* white      — floating cards          */
-  --color-border:        214 211 209;   /* stone-300                            */
-  --color-border-subtle: 231 229 228;   /* stone-200                            */
-  --color-text:          28  25  23;    /* stone-900                            */
-  --color-text-muted:    120 113 108;   /* stone-500                            */
-  --shadow-card:         0 4px 32px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.08);
 }
 
 .dark {
-  /* Dark mode */
-  --color-surface:        23  23  23;   /* ~stone-900 — page background         */
-  --color-surface-raised:  0   0   0;   /* black      — floating cards          */
-  --color-border:         68  64  60;   /* stone-700                            */
-  --color-border-subtle:  41  37  36;   /* stone-800                            */
-  --color-text:          231 229 228;   /* stone-200                            */
-  --color-text-muted:    120 113 108;   /* stone-500                            */
-  --shadow-card:         0 4px 32px rgba(0, 0, 0, 0.55);
+  --color-surface: rgb(23 23 23);
+  --color-surface-raised: rgb(0 0 0);
+  --color-border: rgb(68 64 60);
+  --color-border-subtle: rgb(41 37 36);
+  --color-text: rgb(231 229 228);
+  --color-text-muted: rgb(120 113 108);
+  --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.55);
 }
 
 /* ─── Base ────────────────────────────────────────────────────────────────── */
