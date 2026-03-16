@@ -9,9 +9,8 @@ const SKILLS = [
 
 const STATS = [
   { label: "Projects", value: "7+" },
-  { label: "Experience", value: "3 yrs" },
+  { label: "Research Experience", value: "1+ yrs" },
   { label: "Technologies", value: "12+" },
-  { label: "Internships", value: "2" },
 ];
 
 export default function Home({ navigate }) {
@@ -77,7 +76,7 @@ export default function Home({ navigate }) {
       </Card>
 
       {/* Stats */}
-      <Card className={cn("max-w-7xl w-full grid grid-cols-4 overflow-hidden", fadeIn("delay-150"))}>
+      <Card className={cn("max-w-7xl w-full grid grid-cols-3 overflow-hidden", fadeIn("delay-150"))}>
         {STATS.map((stat, i) => (
           <div
             key={stat.label}
