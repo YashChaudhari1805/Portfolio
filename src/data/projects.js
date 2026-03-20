@@ -38,11 +38,24 @@ export const projects = [
     bullets: [
       "Built high-performance XGBoost engine to achieve accurate credit risk assessment on diverse datasets.",
       "Integrated SHAP and LIME to achieve explainable AI insights, clarifying rejection factors for users and regulators.",
-      "Orchestrated Gemini API-powered LLM layer to achieve personalized advisor emails based on model predictions.",
+      "Orchestrated Grok API-powered LLM layer to achieve personalized advisor emails based on model predictions.",
       "Implemented AI Guardrail with system prompts to achieve professional decorum and regulatory compliance in all communications.",
     ],
-    stack: ["XGBoost", "Python", "Gemini API", "SHAP"],
+    stack: ["XGBoost", "Python", "Grok API", "SHAP", "Resend"],
     status: "in-progress",
+    year: "2026",
+  },
+  {
+    title: "FitBite — AI-Powered Nutrition Tracker",
+    description:
+      "A full-stack MERN application designed to simplify health tracking, featuring a completed React frontend and backend nearing completion for auth, metrics, and data management.",
+    bullets: [
+      "Developed responsive UI with React and Tailwind CSS to achieve seamless data entry and intuitive user experience.",
+      "Engineered 85% of backend using Node.js and Express to achieve secure authentication and health metrics storage.",
+      "Integrated MongoDB to achieve efficient management of user nutritional data and history logs.",
+    ],
+    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    status: "completed",
     year: "2026",
   },
   {
@@ -55,7 +68,7 @@ export const projects = [
       "Built Node.js/Express backend to achieve dynamic serving of project metadata via RESTful API.",
       "Automated deployment workflows to achieve high availability and optimal performance.",
     ],
-    stack: ["React", "Node.js", "Tailwind CSS", "Vite"],
+    stack: ["React", "Tailwind CSS", "Vite"],
     status: "completed",
     year: "2026",
   },
@@ -89,19 +102,6 @@ export const projects = [
     stack: ["Python", "PuLP", "Optimization", "MILP"],
     status: "completed",
     year: "2025",
-  },
-  {
-    title: "FitBite — AI-Powered Nutrition Tracker",
-    description:
-      "A full-stack MERN application designed to simplify health tracking, featuring a completed React frontend and backend nearing completion for auth, metrics, and data management.",
-    bullets: [
-      "Developed responsive UI with React and Tailwind CSS to achieve seamless data entry and intuitive user experience.",
-      "Engineered 85% of backend using Node.js and Express to achieve secure authentication and health metrics storage.",
-      "Integrated MongoDB to achieve efficient management of user nutritional data and history logs.",
-    ],
-    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    status: "in-progress",
-    year: "2026",
   },
   {
     title: "Diabetes Prediction System",
