@@ -67,7 +67,7 @@ export default function Resume() {
             <a
               href={RESUME_PATH}
               download="YashChaudhari_Resume.pdf"
-              className="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium tracking-wide bg-text text-surface-raised hover:opacity-80 transition-opacity"
+              className="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium tracking-wide bg-text text-surface-raised hover:opacity-80 transition-opacity"
             >
               <DownloadIcon />
               Download
