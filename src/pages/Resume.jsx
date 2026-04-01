@@ -157,11 +157,6 @@ export default function Resume() {
           </Card>
         )}
 
-        <p className="text-xs text-center mt-4 text-text-muted">
-          Place your resume PDF at{" "}
-          <code className="opacity-60">/public/resume.pdf</code> for it to
-          appear here.
-        </p>
       </div>
     </div>
   );
