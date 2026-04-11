@@ -22,10 +22,10 @@ export const projects = [
     status: "completed",
     year: "2025",
     // liveUrl: "https://oral-cancer-demo.yashchaudhari.dev",
-    // repoUrl: "https://github.com/YashChaudhari1805/oral-cancer-detection",
+    repoUrl: "https://github.com/YashChaudhari1805/OSCC_Detection.git",
   },
   {
-    title: "FinTech AI Pipeline — LoanGuard",
+    title: "FinTech AI Pipeline — SecureLoan",
     description:
       "An end-to-end automated loan approval system leveraging Gradient Boosting and Generative AI to enable transparent, compliant financial decisions.",
     bullets: [
@@ -37,7 +37,7 @@ export const projects = [
     stack: ["XGBoost", "Python", "Grok API", "SHAP", "Resend"],
     status: "in-progress",
     year: "2026",
-    // repoUrl: "https://github.com/YashChaudhari1805/loan-guard",
+    repoUrl: "https://github.com/YashChaudhari1805/SecureLoan-FinTech.git",
   },
   {
     title: "FitBite — AI-Powered Nutrition Tracker",
@@ -51,11 +51,11 @@ export const projects = [
     stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     status: "completed",
     year: "2026",
-    // liveUrl: "https://fitbite.yashchaudhari.dev",
-    // repoUrl: "https://github.com/YashChaudhari1805/fitbite",
+    liveUrl: "https://ykfitbite.vercel.app/",
+    repoUrl: "https://github.com/YashChaudhari1805/FitBite-React",
   },
   {
-    title: "MERN Stack Portfolio & Personal Brand",
+    title: "Portfolio",
     description:
       "A high-performance, responsive portfolio showcasing the intersection of Machine Learning and Full-Stack Engineering — built with React, Tailwind CSS, and Vite.",
     bullets: [
@@ -67,7 +67,8 @@ export const projects = [
     stack: ["React", "Tailwind CSS", "Vite"],
     status: "completed",
     year: "2026",
-    liveUrl: "https://yashchaudhari.dev",
+    liveUrl: "https://yashchaudhari.vercel.app/",
+    repoUrl: "https://github.com/YashChaudhari1805/Portfolio.git",
   },
   {
     title: "Hybrid Anomaly Detection Pipeline",
@@ -83,21 +84,7 @@ export const projects = [
     stack: ["Python", "PyTorch", "Deep Learning", "NumPy", "Scikit-Learn"],
     status: "completed",
     year: "2025",
-    // repoUrl: "https://github.com/YashChaudhari1805/anomaly-detection",
-  },
-  {
-    title: "Resource-Constrained Project Scheduling (MILP)",
-    description:
-      "Mathematical optimization model for solving resource-constrained project scheduling problems using Mixed Integer Linear Programming.",
-    bullets: [
-      "Formulated MILP model to minimize project makespan under multi-resource constraints.",
-      "Implemented using PuLP with custom constraint generation for complex multi-resource scenarios.",
-      "Benchmarked against heuristic approaches to demonstrate optimality guarantees.",
-    ],
-    stack: ["Python", "PuLP", "Optimization", "MILP"],
-    status: "completed",
-    year: "2025",
-    // repoUrl: "https://github.com/YashChaudhari1805/milp-scheduling",
+    repoUrl: "https://github.com/YashChaudhari1805/Hybrid-Anomaly-Detection.git",
   },
   {
     title: "Diabetes Prediction System",
@@ -112,6 +99,6 @@ export const projects = [
     stack: ["Scikit-learn", "Python", "Pandas", "Matplotlib"],
     status: "completed",
     year: "2024",
-    // repoUrl: "https://github.com/YashChaudhari1805/diabetes-prediction",
+    repoUrl: "https://github.com/YashChaudhari1805/Sushruta.git",
   },
 ];
