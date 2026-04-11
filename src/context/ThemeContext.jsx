@@ -6,11 +6,9 @@ export function ThemeProvider({ children }) {
   const [darkMode, setDarkMode] = useState(() => {
     const stored = localStorage.getItem("theme");
     if (stored) return stored === "dark";
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return false; // Light is the default
   });
 
-  // This effect MUST run on mount and every darkMode change
-  // to keep the `dark` class on <html> in sync
   useEffect(() => {
     const root = document.documentElement;
     if (darkMode) {
@@ -21,7 +19,7 @@ export function ThemeProvider({ children }) {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
-  const toggleTheme = () => setDarkMode((prev) => !prev);
+  const toggleTheme = () => setDarkMode((p) => !p);
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>

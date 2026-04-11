@@ -15,17 +15,17 @@ function AppShell() {
     setTimeout(() => {
       setPage(target);
       setTransitioning(false);
-    }, 300);
+    }, 220);
   };
 
   return (
-    // bg-surface and text-text use the CSS-variable tokens — no dark: prefix needed
-    <div className="min-h-screen bg-surface text-text transition-colors duration-500 font-sans">
+    <div className="page-wrapper" style={{ minHeight: "100vh" }}>
       <Navbar page={page} navigate={navigate} />
       <main
-        className={`transition-opacity duration-300 ${
-          transitioning ? "opacity-0" : "opacity-100"
-        }`}
+        style={{
+          opacity: transitioning ? 0 : 1,
+          transition: "opacity 0.22s ease",
+        }}
       >
         {page === "home"     && <Home navigate={navigate} />}
         {page === "projects" && <Projects />}

@@ -1,26 +1,17 @@
 /**
  * Static project data.
- * Keep UI components free of hardcoded content — edit here only.
+ *
+ * To add links to a project, uncomment and fill in:
+ *   liveUrl: "https://your-deployed-site.com"   → shows "Live Demo" button
+ *   repoUrl: "https://github.com/you/repo"      → shows "Source" button
+ *
+ * Both are optional. Either or both can be set independently.
  */
-
-/** @typedef {'completed'|'in-progress'} ProjectStatus */
-
-/**
- * @typedef {Object} Project
- * @property {string}        title
- * @property {string}        description
- * @property {string[]}      bullets
- * @property {string[]}      stack
- * @property {ProjectStatus} status
- * @property {string}        year
- */
-
-/** @type {Project[]} */
 export const projects = [
   {
     title: "Oral Cancer Detection (Deep Learning)",
     description:
-      "A clinical-grade diagnostic tool for detecting Oral Squamous Cell Carcinoma (OSCC) from histopathological images.",
+      "A clinical-grade diagnostic tool for detecting Oral Squamous Cell Carcinoma (OSCC) from histopathological images using CNN-based deep learning.",
     bullets: [
       "Designed a CNN-based classification model achieving 92% diagnostic accuracy.",
       "Engineered an image preprocessing pipeline to normalize clinical images and improve feature extraction.",
@@ -30,91 +21,97 @@ export const projects = [
     stack: ["Python", "TensorFlow", "Deep Learning", "CNN"],
     status: "completed",
     year: "2025",
+    // liveUrl: "https://oral-cancer-demo.yashchaudhari.dev",
+    // repoUrl: "https://github.com/YashChaudhari1805/oral-cancer-detection",
   },
   {
-    title: "FinTech AI Pipeline",
+    title: "FinTech AI Pipeline — LoanGuard",
     description:
-      "Developed an end-to-end automated loan approval system, LoanGuard, leveraging Gradient Boosting and Generative AI to enable transparent, compliant financial decisions.",
+      "An end-to-end automated loan approval system leveraging Gradient Boosting and Generative AI to enable transparent, compliant financial decisions.",
     bullets: [
-      "Built high-performance XGBoost engine to achieve accurate credit risk assessment on diverse datasets.",
-      "Integrated SHAP and LIME to achieve explainable AI insights, clarifying rejection factors for users and regulators.",
-      "Orchestrated Grok API-powered LLM layer to achieve personalized advisor emails based on model predictions.",
-      "Implemented AI Guardrail with system prompts to achieve professional decorum and regulatory compliance in all communications.",
+      "Built high-performance XGBoost engine for accurate credit risk assessment on diverse datasets.",
+      "Integrated SHAP and LIME for explainable AI insights, clarifying rejection factors for users and regulators.",
+      "Orchestrated Grok API-powered LLM layer for personalized advisor emails based on model predictions.",
+      "Implemented AI Guardrail with system prompts to ensure professional decorum and regulatory compliance.",
     ],
     stack: ["XGBoost", "Python", "Grok API", "SHAP", "Resend"],
     status: "in-progress",
     year: "2026",
+    // repoUrl: "https://github.com/YashChaudhari1805/loan-guard",
   },
   {
     title: "FitBite — AI-Powered Nutrition Tracker",
     description:
-      "A full-stack MERN application designed to simplify health tracking, featuring a completed React frontend and backend nearing completion for auth, metrics, and data management.",
+      "A full-stack MERN application designed to simplify health tracking, featuring a React frontend and a Node.js backend for auth, metrics, and data management.",
     bullets: [
-      "Developed responsive UI with React and Tailwind CSS to achieve seamless data entry and intuitive user experience.",
-      "Engineered 85% of backend using Node.js and Express to achieve secure authentication and health metrics storage.",
-      "Integrated MongoDB to achieve efficient management of user nutritional data and history logs.",
+      "Developed responsive UI with React and Tailwind CSS for seamless data entry and intuitive UX.",
+      "Engineered backend using Node.js and Express for secure authentication and health metrics storage.",
+      "Integrated MongoDB for efficient management of user nutritional data and history logs.",
     ],
     stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     status: "completed",
     year: "2026",
+    // liveUrl: "https://fitbite.yashchaudhari.dev",
+    // repoUrl: "https://github.com/YashChaudhari1805/fitbite",
   },
   {
     title: "MERN Stack Portfolio & Personal Brand",
     description:
-      "A high-performance, responsive portfolio showcasing the intersection of Machine Learning and Full-Stack Engineering, built with React, Tailwind CSS, Node.js, and Vite.",
+      "A high-performance, responsive portfolio showcasing the intersection of Machine Learning and Full-Stack Engineering — built with React, Tailwind CSS, and Vite.",
     bullets: [
-      "Architected React frontend with Tailwind CSS to achieve modern, minimalist UI/UX across devices.",
-      "Integrated dark-mode-first design system to achieve smooth page transitions and enhanced user engagement.",
-      "Built Node.js/Express backend to achieve dynamic serving of project metadata via RESTful API.",
-      "Automated deployment workflows to achieve high availability and optimal performance.",
+      "Architected React frontend with Tailwind CSS for modern, minimalist UI/UX across devices.",
+      "Integrated dual-theme (light/dark) design system with smooth page transitions.",
+      "Built Node.js/Express backend for dynamic serving of project metadata via RESTful API.",
+      "Deployed with automated CI/CD for high availability and optimal performance.",
     ],
     stack: ["React", "Tailwind CSS", "Vite"],
     status: "completed",
     year: "2026",
+    liveUrl: "https://yashchaudhari.dev",
   },
   {
-    title: "A Multi-Model Approach to Log Security",
+    title: "Hybrid Anomaly Detection Pipeline",
     description:
-      "This project implements a sophisticated Hybrid Anomaly Detection Pipeline designed to identify complex security threats and system failures in structured log data. By combining traditional machine learning with deep learning, the system captures both global outliers and subtle multivariate deviations that single-model approaches often miss.",
+      "A sophisticated security log analysis system combining Isolation Forest and Deep Autoencoder to detect complex threats and system failures that single-model approaches miss.",
     bullets: [
-      "Developed a dual-model ensemble pipeline combining Isolation Forest and a Deep Autoencoder to detect system anomalies in structured log data with a ROC_AUC of 0.96.",
-      "Engineered a robust feature processing suite using RobustScaler and OrdinalEncoder, incorporating custom system-level stress indicators such as hardware pressure indices and network I/O ratios.",
-      "Implemented a high-performance Neural Network (PyTorch) featuring LayerNorm and GELU activations to compress system metrics into an 8-dimensional latent space for reconstruction-based error analysis.",
-      "Optimized detection sensitivity by utilizing Precision-Recall (PR) Curve thresholding to mathematically determine the optimal F1-score for binary classification.",
-      "Built advanced visualization tools for Root Cause Analysis (RCA), including feature-level reconstruction error charts and rolling anomaly monitoring timelines using Plotly.",
-      "Designed an automated artifact persistence system to export fitted scaling pipelines, model weights, and performance metrics for seamless production deployment."
+      "Developed dual-model ensemble pipeline (Isolation Forest + Deep Autoencoder) achieving ROC-AUC of 0.96.",
+      "Engineered feature processing suite using RobustScaler with custom system-level stress indicators.",
+      "Implemented PyTorch Neural Network with LayerNorm and GELU activations compressing to an 8-dimensional latent space.",
+      "Optimized detection via Precision-Recall curve thresholding for mathematically determined F1-optimal classification.",
+      "Built Plotly visualizations for Root Cause Analysis and rolling anomaly monitoring timelines.",
     ],
-    stack: ["Python", "PyTorch", "Deep Learning", "Numpy", "Sckit-Learn"],
+    stack: ["Python", "PyTorch", "Deep Learning", "NumPy", "Scikit-Learn"],
     status: "completed",
     year: "2025",
+    // repoUrl: "https://github.com/YashChaudhari1805/anomaly-detection",
   },
   {
     title: "Resource-Constrained Project Scheduling (MILP)",
     description:
-      "A clinical-grade diagnostic tool for detecting Oral Squamous Cell Carcinoma (OSCC) from histopathological images using CNN-based deep learning.",
+      "Mathematical optimization model for solving resource-constrained project scheduling problems using Mixed Integer Linear Programming.",
     bullets: [
-      "Secured MOU with Sushrut Hospital Mumbai to achieve access to wax blocks for creating a specialized dataset reflecting Indian genetics and heritage.",
-      "Designed CNN classification model to achieve 92% diagnostic accuracy on clinical datasets.",
-      "Engineered image preprocessing pipeline to achieve normalized inputs and enhanced feature extraction.",
-      "Implemented advanced data augmentation to achieve model robustness and prevent overfitting.",
-      "Validated performance with clinical metrics to achieve reliable Sensitivity, Specificity, and AUC-ROC scores.",
+      "Formulated MILP model to minimize project makespan under multi-resource constraints.",
+      "Implemented using PuLP with custom constraint generation for complex multi-resource scenarios.",
+      "Benchmarked against heuristic approaches to demonstrate optimality guarantees.",
     ],
     stack: ["Python", "PuLP", "Optimization", "MILP"],
     status: "completed",
     year: "2025",
+    // repoUrl: "https://github.com/YashChaudhari1805/milp-scheduling",
   },
   {
     title: "Diabetes Prediction System",
     description:
-      "An end-to-end data science project developed during internship at Exposys Data Labs, delivering a high-accuracy diabetes prediction system through comprehensive ML pipelines.",
+      "An end-to-end data science project delivering a high-accuracy diabetes prediction system through comprehensive ML pipelines, developed during internship at Exposys Data Labs.",
     bullets: [
-      "Engineered complete prediction pipeline to achieve seamless processing from raw data cleaning to model deployment.",
-      "Evaluated classification algorithms including Random Forest, SVM, and Logistic Regression to achieve optimal performance selection.",
-      "Achieved 94% prediction accuracy through rigorous feature scaling and outlier detection techniques.",
-      "Visualized key correlations and performance metrics to achieve clear insights using Pandas and Matplotlib.",
+      "Engineered complete prediction pipeline from raw data cleaning to model deployment.",
+      "Evaluated classification algorithms including Random Forest, SVM, and Logistic Regression.",
+      "Achieved 94% prediction accuracy through rigorous feature scaling and outlier detection.",
+      "Visualized key correlations and performance metrics using Pandas and Matplotlib.",
     ],
     stack: ["Scikit-learn", "Python", "Pandas", "Matplotlib"],
     status: "completed",
     year: "2024",
+    // repoUrl: "https://github.com/YashChaudhari1805/diabetes-prediction",
   },
 ];
