@@ -37,6 +37,7 @@ export const projects = [
     stack: ["XGBoost", "Python", "Grok API", "SHAP", "Resend"],
     status: "in-progress",
     year: "2026",
+    liveUrl: "https://secureloan.onrender.com/dashboard",
     repoUrl: "https://github.com/YashChaudhari1805/SecureLoan-FinTech.git",
   },
   {
