@@ -35,7 +35,7 @@ export const projects = [
       "Implemented AI Guardrail with system prompts to ensure professional decorum and regulatory compliance.",
     ],
     stack: ["XGBoost", "Python", "Grok API", "SHAP", "Resend"],
-    status: "in-progress",
+    status: "completed",
     year: "2026",
     liveUrl: "https://secureloan.onrender.com/dashboard",
     repoUrl: "https://github.com/YashChaudhari1805/SecureLoan-FinTech.git",
