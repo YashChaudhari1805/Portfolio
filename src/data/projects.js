@@ -1,12 +1,3 @@
-/**
- * Static project data.
- *
- * To add links to a project, uncomment and fill in:
- *   liveUrl: "https://your-deployed-site.com"   → shows "Live Demo" button
- *   repoUrl: "https://github.com/you/repo"      → shows "Source" button
- *
- * Both are optional. Either or both can be set independently.
- */
 export const projects = [
   {
     title: "Oral Cancer Detection (Deep Learning)",
@@ -21,7 +12,7 @@ export const projects = [
     stack: ["Python", "TensorFlow", "Deep Learning", "CNN"],
     status: "completed",
     year: "2025",
-    // liveUrl: "https://oral-cancer-demo.yashchaudhari.dev",
+    liveUrl: "https://oscc-detection.onrender.com",
     repoUrl: "https://github.com/YashChaudhari1805/OSCC_Detection.git",
   },
   {
@@ -39,6 +30,21 @@ export const projects = [
     year: "2026",
     liveUrl: "https://secureloan.onrender.com/dashboard",
     repoUrl: "https://github.com/YashChaudhari1805/SecureLoan-FinTech.git",
+  },
+  {
+    title: "VectraCore-RAG (Intelligent Retrieval System)",
+    description: "A production-grade RAG framework designed for high-concurrency AI applications, featuring modular engines for routing, content retrieval, and persona management.",
+    bullets: [
+      "Developed a modular RAG architecture using FastAPI and Pydantic for strict data validation.",
+      "Containerized the entire stack with Docker, including health checks and resource management for Render deployment.",
+      "Built a custom Router Engine to classify and direct queries to specialized sub-engines.",
+      "Configured automated CI/CD workflows via GitHub Actions to streamline testing and deployment cycles.",
+    ],
+    stack: ["FastAPI", "Docker", "Python", "RAG", "CI/CD"],
+    status: "completed",
+    year: "2026",
+    liveUrl: "https://vectracore-rag.onrender.com/dashboard",
+    repoUrl: "https://github.com/yashchaudhari1805/vectracore-rag",
   },
   {
     title: "FitBite — AI-Powered Nutrition Tracker",
