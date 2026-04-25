@@ -1,7 +1,10 @@
 {
-  "name": "fitbite-react",
+  "name": "yash-portfolio",
+  "description": "Portfolio of Yash Kailas Chaudhari — ML Engineer & Full-Stack Developer",
+  "author": "Yash Kailas Chaudhari <cyash9665@gmail.com>",
+  "homepage": "https://yashchaudhari.dev",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,7 +19,6 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",
-    "tailwind": "^4.0.0",
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {

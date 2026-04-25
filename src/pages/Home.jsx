@@ -8,24 +8,41 @@ const SKILLS = [
 ];
 
 const STATS = [
-  { label: "Projects ", value: "7+",    note: "and counting" },
-  { label: "Research Exp.",    value: "1+ yr",  note: "clinical ML" },
-  { label: "Technologies",     value: "15+",    note: "across the stack" },
+  { label: "Projects", value: "7+", note: "and counting" },
+  { label: "Research Exp.", value: "1+ yr", note: "clinical ML" },
+  { label: "Technologies", value: "15+", note: "across the stack" },
 ];
 
 const FOCUS_AREAS = [
-  { tag: "ML / DL",          desc: "Production-grade pipelines — anomaly detection, medical diagnostics, predictive systems" },
-  { tag: "Full-Stack",       desc: "MERN applications with clean architecture and performant RESTful APIs" },
-  { tag: "Explainable AI",   desc: "SHAP, LIME, and XAI techniques for interpretable, auditable model decisions" },
+  { tag: "ML / DL", desc: "Production-grade pipelines — anomaly detection, medical diagnostics, predictive systems" },
+  { tag: "Full-Stack", desc: "MERN applications with clean architecture and performant RESTful APIs" },
+  { tag: "Explainable AI", desc: "SHAP, LIME, and XAI techniques for interpretable, auditable model decisions" },
 ];
 
-/* Reusable inline style helpers (token-safe, works in both themes) */
-const h = (s) => ({ color: "var(--color-heading)", ...s });
-const m = (s) => ({ color: "var(--color-muted)", ...s });
+const EDUCATION = [
+  {
+    degree: "Bachelor of Engineering — Computer Engineering",
+    institution: "Navi Mumbai, Maharashtra",
+    year: "Expected 2027",
+    note: "Specialisation in Machine Learning & Deep Learning",
+  },
+];
+
+const EXPERIENCE = [
+  {
+    role: "Data Science Intern",
+    company: "Exposys Data Labs",
+    period: "2024",
+    desc: "Engineered end-to-end diabetes prediction pipeline achieving 94% accuracy using Random Forest, SVM, and Logistic Regression on real clinical datasets.",
+  },
+];
 
 export default function Home({ navigate }) {
   const [visible, setVisible] = useState(false);
-  useEffect(() => { const id = setTimeout(() => setVisible(true), 60); return () => clearTimeout(id); }, []);
+  useEffect(() => {
+    const id = setTimeout(() => setVisible(true), 60);
+    return () => clearTimeout(id);
+  }, []);
 
   const fadeStyle = (delay = 0) => ({
     animation: visible ? `fadeUp 0.55s ease-out ${delay}ms both` : "none",
@@ -108,13 +125,13 @@ export default function Home({ navigate }) {
                 padding: "10px 24px",
                 borderRadius: 12,
                 cursor: "pointer",
-                background:  "rgba(29,78,216,0.12)",
-                border:      "1px solid rgba(29,78,216,0.28)",
-                color:       "var(--color-heading)",
-                transition:  "background 0.2s",
+                background: "rgba(29,78,216,0.12)",
+                border: "1px solid rgba(29,78,216,0.28)",
+                color: "var(--color-heading)",
+                transition: "background 0.2s",
               }}
-              onMouseEnter={e => e.currentTarget.style.background = "rgba(29,78,216,0.20)"}
-              onMouseLeave={e => e.currentTarget.style.background = "rgba(29,78,216,0.12)"}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(29,78,216,0.20)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(29,78,216,0.12)"; }}
             >
               View Projects →
             </button>
@@ -127,22 +144,28 @@ export default function Home({ navigate }) {
                 padding: "10px 24px",
                 borderRadius: 12,
                 cursor: "pointer",
-                background:  "transparent",
-                border:      "1px solid var(--glass-border)",
-                color:       "var(--color-muted)",
-                transition:  "border-color 0.2s, color 0.2s",
+                background: "transparent",
+                border: "1px solid var(--glass-border)",
+                color: "var(--color-muted)",
+                transition: "border-color 0.2s, color 0.2s",
               }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--color-muted)"; e.currentTarget.style.color = "var(--color-text)"; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--glass-border)"; e.currentTarget.style.color = "var(--color-muted)"; }}
             >
-              Résumé
+              Resume
             </button>
           </div>
         </GlassCard>
       </div>
 
       {/* ── Stats ────────────────────────────────────────────── */}
-      <div style={{ ...fadeStyle(120), display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginBottom: 16 }}>
+      <div style={{
+        ...fadeStyle(120),
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: 16,
+        marginBottom: 16,
+      }}>
         {STATS.map((stat) => (
           <GlassCard key={stat.label} style={{ padding: "clamp(18px, 4vw, 32px) 16px", textAlign: "center" }}>
             <p style={{
@@ -171,8 +194,124 @@ export default function Home({ navigate }) {
         ))}
       </div>
 
+      {/* ── About / Education ─────────────────────────────────── */}
+      <div style={{ ...fadeStyle(200), marginBottom: 16 }}>
+        <GlassCard style={{ padding: "clamp(24px, 5vw, 40px)" }}>
+          <p style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "0.68rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--color-muted)",
+            marginBottom: 20,
+          }}>
+            About
+          </p>
+
+          <p style={{
+            fontSize: "clamp(0.88rem, 2vw, 0.98rem)",
+            color: "var(--color-text)",
+            lineHeight: 1.75,
+            maxWidth: "64ch",
+            marginBottom: 28,
+          }}>
+            I am a final-year Computer Engineering student from Navi Mumbai, Maharashtra, with a
+            strong foundation in machine learning, deep learning, and full-stack web development.
+            My work spans clinical diagnostics, financial risk modelling, and retrieval-augmented
+            generation — always with a focus on interpretability and production readiness.
+          </p>
+
+          {/* Education */}
+          <p style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "0.65rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--color-muted)",
+            marginBottom: 12,
+          }}>
+            Education
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 28 }}>
+            {EDUCATION.map((edu) => (
+              <div
+                key={edu.degree}
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "8px 24px",
+                  alignItems: "flex-start",
+                  paddingBottom: 12,
+                  borderBottom: "1px solid var(--glass-border)",
+                }}
+              >
+                <div style={{ flex: 1, minWidth: 180 }}>
+                  <p style={{ color: "var(--color-heading)", fontSize: "0.92rem", marginBottom: 3 }}>{edu.degree}</p>
+                  <p style={{ color: "var(--color-muted)", fontFamily: "var(--font-mono)", fontSize: "0.72rem" }}>{edu.institution}</p>
+                  <p style={{ color: "var(--color-muted)", fontFamily: "var(--font-mono)", fontSize: "0.70rem", marginTop: 4 }}>{edu.note}</p>
+                </div>
+                <span style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "0.70rem",
+                  color: "var(--color-accent)",
+                  letterSpacing: "0.06em",
+                  flexShrink: 0,
+                  paddingTop: 2,
+                }}>
+                  {edu.year}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* Experience */}
+          <p style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "0.65rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--color-muted)",
+            marginBottom: 12,
+          }}>
+            Experience
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {EXPERIENCE.map((exp) => (
+              <div
+                key={exp.role}
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "8px 24px",
+                  alignItems: "flex-start",
+                }}
+              >
+                <div style={{ flex: 1, minWidth: 180 }}>
+                  <p style={{ color: "var(--color-heading)", fontSize: "0.92rem", marginBottom: 3 }}>
+                    {exp.role} <span style={{ color: "var(--color-muted)" }}>@ {exp.company}</span>
+                  </p>
+                  <p style={{ color: "var(--color-text)", fontSize: "0.84rem", lineHeight: 1.6, marginTop: 4 }}>
+                    {exp.desc}
+                  </p>
+                </div>
+                <span style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "0.70rem",
+                  color: "var(--color-accent)",
+                  letterSpacing: "0.06em",
+                  flexShrink: 0,
+                  paddingTop: 2,
+                }}>
+                  {exp.period}
+                </span>
+              </div>
+            ))}
+          </div>
+        </GlassCard>
+      </div>
+
       {/* ── Focus Areas ───────────────────────────────────────── */}
-      <div style={fadeStyle(220)}>
+      <div style={fadeStyle(300)}>
         <GlassCard style={{ padding: "clamp(24px, 5vw, 40px)" }}>
           <p style={{
             fontFamily: "var(--font-mono)",
